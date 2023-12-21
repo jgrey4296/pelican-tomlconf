@@ -39,8 +39,9 @@ logging = logmod.getLogger(__name__)
 import tomlguard as TG
 from pelican import signals
 
-CONFIG_FILENAME   = pl.Path("pelican.toml")
-FALLBACK_FILENAME = pl.Path("pyproject.toml")
+__version__ : Final[str] = "0.1.0"
+CONFIG_FILENAME          = pl.Path("pelican.toml")
+FALLBACK_FILENAME        = pl.Path("pyproject.toml")
 
 def apply_section(section, settings):
     for key,value in section.items():
