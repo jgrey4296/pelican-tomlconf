@@ -39,7 +39,7 @@ logging = logmod.getLogger(__name__)
 import tomlguard as TG
 from pelican import signals
 
-__version__ : Final[str] = "0.1.0"
+__version__ : Final[str] = "0.2.0"
 CONFIG_FILENAME          = pl.Path("pelican.toml")
 FALLBACK_FILENAME        = pl.Path("pyproject.toml")
 
